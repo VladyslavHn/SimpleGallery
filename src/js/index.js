@@ -67,7 +67,12 @@ form.addEventListener('submit', (e) => {
             .finally(() => {
                 loader.style.display = 'none';
             });
+        
     }, 500);
+    loadBtn.disabled = true;
+    loadBtn.style.display = 'none'
+    loadBtn.style.opacity = 0;
+    loadBtn.style.overflow = 'hidden';
     btnChange();
     e.target.reset();
 });
